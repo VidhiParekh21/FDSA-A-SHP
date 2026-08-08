@@ -1,7 +1,0 @@
-PRACTICAL 1
-1.1
-The program becomes slow if the number of rotations is very large. Using h % n makes it faster
-1.2
-The same book ID may be printed more than once. Check if it is already printed
-1.3
-The last word may not be checked. Add a space at the end of the sentence to fix it.

@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 // Bubble Sort
 void bubbleSort(int a[], int n) {
     for (int i = 0; i < n - 1; i++) {
@@ -30,7 +29,6 @@ void selectionSort(int a[], int n) {
         a[min] = temp;
     }
 }
-
 // Insertion Sort
 void insertionSort(int a[], int n) {
     for (int i = 1; i < n; i++) {
@@ -45,7 +43,6 @@ void insertionSort(int a[], int n) {
         a[j + 1] = key;
     }
 }
-
 // Display array
 void display(int a[], int n) {
     for (int i = 0; i < n; i++) {
@@ -53,34 +50,25 @@ void display(int a[], int n) {
     }
     cout << endl;
 }
-
 int main() {
     int n;
-
     cout << "Enter number of students: ";
     cin >> n;
-
     int a[100], b[100], c[100];
-
     cout << "Enter marks: ";
     for (int i = 0; i < n; i++) {
         cin >> a[i];
         b[i] = a[i];
         c[i] = a[i];
     }
-
     bubbleSort(a, n);
     selectionSort(b, n);
     insertionSort(c, n);
-
     cout << "\nBubble Sort: ";
     display(a, n);
-
     cout << "Selection Sort: ";
     display(b, n);
-
-    cout << "Insertion Sort: ";
+   cout << "Insertion Sort: ";
     display(c, n);
-
     return 0;
 }

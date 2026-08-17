@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 // Iterative Linear Search
 int linearIterative(int a[], int n, int target) {
     for (int i = 0; i < n; i++) {
@@ -9,7 +8,6 @@ int linearIterative(int a[], int n, int target) {
     }
     return -1;
 }
-
 // Recursive Linear Search
 int linearRecursive(int a[], int n, int target, int i) {
     if (i == n)
@@ -20,7 +18,6 @@ int linearRecursive(int a[], int n, int target, int i) {
 
     return linearRecursive(a, n, target, i + 1);
 }
-
 int main() {
     int n, target;
 

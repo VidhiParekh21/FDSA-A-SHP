@@ -15,13 +15,11 @@ int main()
     {
         cin >> book[i];
     }
-
     cout << "Books borrowed more than once are: ";
 
     for (int i = 0; i < n; i++)
     {
         int count = 1;
-
         // Skip if already checked
         bool checked = false;
         for (int k = 0; k < i; k++)
